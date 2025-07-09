@@ -1,3 +1,12 @@
 {
-  "recommendations": ["shopify.theme-check-vscode", "esbenp.prettier-vscode"]
+  "recommendations": [
+    "Shopify.theme-check-vscode",
+    "neilding.language-liquid",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-json",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.vscode-css-peek"
+  ]
 }

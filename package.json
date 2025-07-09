@@ -1,0 +1,28 @@
+{
+  "name": "the-dropout-theme",
+  "version": "1.0.0",
+  "description": "The Dropout Shopify theme by Apogee",
+  "main": "index.js",
+  "scripts": {
+    "dev": "shopify theme dev",
+    "deploy": "shopify theme push",
+    "pull": "shopify theme pull",
+    "check": "shopify theme check",
+    "serve": "shopify theme serve",
+    "watch": "shopify theme dev --store=your-store.myshopify.com",
+    "build": "echo 'No build step required for Shopify themes'",
+    "test": "echo 'Add your test commands here'"
+  },
+  "keywords": [
+    "shopify",
+    "theme",
+    "dawn",
+    "ecommerce"
+  ],
+  "author": "Apogee",
+  "license": "MIT",
+  "devDependencies": {},
+  "engines": {
+    "node": ">=16.0.0"
+  }
+} 

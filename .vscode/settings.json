@@ -1,15 +1,25 @@
 {
-  "editor.formatOnSave": false,
-  "[javascript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "files.associations": {
+    "*.liquid": "liquid"
   },
-  "[css]": {
-    "editor.formatOnSave": true
+  "emmet.includeLanguages": {
+    "liquid": "html"
   },
-  "[liquid]": {
-    "editor.defaultFormatter": "Shopify.theme-check-vscode",
-    "editor.formatOnSave": true
+  "files.exclude": {
+    "**/.shopify": true,
+    "**/node_modules": true
   },
-  "themeCheck.checkOnSave": true
+  "search.exclude": {
+    "**/.shopify": true,
+    "**/node_modules": true
+  },
+  "liquid.format.enable": true,
+  "liquid.completion.enable": true,
+  "liquid.validation.enable": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
 }
