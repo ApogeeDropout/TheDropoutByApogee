@@ -10,18 +10,11 @@
             "heading_size": "h0"
           }
         },
-        "text_1": {
+        "text": {
           "type": "text",
           "settings": {
-            "text": "The Dropout Texture Clay ger dig textur, volym och kontroll som håller från morgon till kväll.",
+            "text": "The Dropout Texture Clay ger dig textur, volym och kontroll som håller från morgon till kväll.\n\nIngen glans. Inget klet. Bara en naturlig, självsäker stil som sitter hela dagen.",
             "text_style": "body"
-          }
-        },
-        "text_2": {
-          "type": "text",
-          "settings": {
-            "text": "Ingen glans. Inget klet. Bara en naturlig, självsäker stil som sitter hela dagen.",
-            "text_style": "subtitle"
           }
         },
         "button": {
@@ -38,8 +31,7 @@
       },
       "block_order": [
         "heading",
-        "text_1", 
-        "text_2",
+        "text",
         "button"
       ],
       "settings": {
@@ -246,7 +238,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "The Dropout Texture Clay. Begränsad första serie. För de som vågar acceptera medelmåtta.",
+            "text": "The Dropout Texture Clay. Begränsad första serie. För de som vågar acceptera medelmåtta.\n\nBegränsad tillgång. Bara för de som förstår skillnaden.",
             "text_style": "body"
           }
         },
@@ -260,20 +252,12 @@
             "button_link_2": "#",
             "button_style_secondary_2": true
           }
-        },
-        "text_2": {
-          "type": "text",
-          "settings": {
-            "text": "Begränsad tillgång. Bara för de som förstår skillnaden.",
-            "text_style": "caption-with-letter-spacing"
-          }
         }
       },
       "block_order": [
         "heading",
         "text",
-        "button",
-        "text_2"
+        "button"
       ],
       "settings": {
         "image_overlay_opacity": 0,
