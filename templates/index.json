@@ -1,210 +1,54 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "The dropout",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
+    "dropout_hero": {
+      "type": "custom-liquid",
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "custom_liquid": "<section class=\"dropout-hero\">\n  <div class=\"page-width\">\n    <div class=\"grid grid-cols-1 lg:grid-cols-2 gap-12 items-center\">\n      <div class=\"text-left\">\n        <h1 class=\"text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-black mb-6\">\n          Volym och textur<br>\n          Från morgon<br>\n          till kväll\n        </h1>\n        <p class=\"text-lg text-gray-800 mb-4\">\n          The Dropout Texture Clay ger dig textur, volym och kontroll som håller från morgon till kväll.\n        </p>\n        <p class=\"text-lg text-gray-700 mb-8\">\n          Ingen glans. Inget klet. Bara en naturlig, självsäker stil som sitter hela dagen.\n        </p>\n        <div class=\"flex gap-4\">\n          <a href=\"#\" class=\"btn-primary\">LÄS MER</a>\n          <a href=\"#\" class=\"btn-secondary\">PRE-ORDER</a>\n        </div>\n      </div>\n      <div class=\"text-center\">\n        <img src=\"{{ 'product-hero.png' | asset_url }}\" alt=\"The Dropout Texture Clay\" class=\"mx-auto max-w-full h-auto\">\n      </div>\n    </div>\n  </div>\n</section>",
+        "color_scheme": "scheme-1"
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
+    "dropout_movement": {
+      "type": "custom-liquid",
       "settings": {
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "custom_liquid": "<section class=\"dropout-movement-section\">\n  <div class=\"page-width text-center\">\n    <h2 class=\"text-5xl lg:text-6xl font-black text-white mb-6\">\n      Not a brand.<br>\n      This is a fkn movement.\n    </h2>\n    <p class=\"text-lg text-white opacity-80 max-w-4xl mx-auto\">\n      Vi skapar inte bara produkter. Vi startar en revolution mot allt som är falskt, konstgjort och mainstream i hårvården.\n    </p>\n  </div>\n</section>",
+        "color_scheme": "scheme-4"
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "dropout_features": {
+      "type": "custom-liquid",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
+        "custom_liquid": "<section class=\"dropout-features\">\n  <div class=\"page-width text-center\">\n    <h2 class=\"text-4xl lg:text-5xl font-black text-black mb-4\">\n      Varför The Dropout Clay?\n    </h2>\n    <p class=\"text-lg text-gray-700 mb-16 max-w-4xl mx-auto\">\n      Inte bara ännu en hårvårdsprodukt. Detta är resultatet av års frustration över produkter som inte levererar.\n    </p>\n    \n    <div class=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12\">\n      <div class=\"text-center\">\n        <div class=\"feature-icon\"></div>\n        <h3 class=\"text-xl font-bold text-black mb-4\">Textur som håller</h3>\n        <p class=\"text-gray-700\">\n          Ingen kompromiss när det gäller hållbarhet. Från morgon till kväll.\n        </p>\n      </div>\n      \n      <div class=\"text-center\">\n        <div class=\"feature-icon\"></div>\n        <h3 class=\"text-xl font-bold text-black mb-4\">Volym hela dagen</h3>\n        <p class=\"text-gray-700\">\n          Naturlig volym som inte försvinner när du behöver den mest.\n        </p>\n      </div>\n      \n      <div class=\"text-center\">\n        <div class=\"feature-icon\"></div>\n        <h3 class=\"text-xl font-bold text-black mb-4\">Naturlig finish</h3>\n        <p class=\"text-gray-700\">\n          Ingen glans. Inget klet. Bara ren, naturlig textur.\n        </p>\n      </div>\n      \n      <div class=\"text-center\">\n        <div class=\"feature-icon\"></div>\n        <h3 class=\"text-xl font-bold text-black mb-4\">Enkel applicering</h3>\n        <p class=\"text-gray-700\">\n          Fungerar i både torrt och fuktigt hår. Inga krångliga rutiner.\n        </p>\n      </div>\n    </div>\n  </div>\n</section>",
+        "color_scheme": "scheme-1"
       }
     },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
+    "dropout_testimonials": {
+      "type": "custom-liquid",
       "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "custom_liquid": "<section class=\"dropout-testimonials\">\n  <div class=\"page-width text-center\">\n    <h2 class=\"text-4xl lg:text-5xl font-black text-black mb-4\">\n      Detta säger andra\n    </h2>\n    <p class=\"text-lg text-gray-700 mb-16\">\n      Röster från människor som vågrar acceptera mediokritet\n    </p>\n    \n    <div class=\"grid grid-cols-1 md:grid-cols-3 gap-12\">\n      <div class=\"text-left\">\n        <p class=\"text-lg text-black mb-6 font-medium\">\n          \"Äntligen en produkt som håller vad den lovar. Ingen bullshit, bara resultat.\"\n        </p>\n        <p class=\"text-sm font-bold text-black\">\n          — MARCUS, 28\n        </p>\n      </div>\n      \n      <div class=\"text-left\">\n        <p class=\"text-lg text-black mb-6 font-medium\">\n          \"Har testat allt. Detta är det enda som ger mig den textur jag vill ha.\"\n        </p>\n        <p class=\"text-sm font-bold text-black\">\n          — EMIL, 24\n        </p>\n      </div>\n      \n      <div class=\"text-left\">\n        <p class=\"text-lg text-black mb-6 font-medium\">\n          \"Slutar aldrig imponera. Håller hela dagen utan att kännas klibbigt.\"\n        </p>\n        <p class=\"text-sm font-bold text-black\">\n          — VIKTOR, 31\n        </p>\n      </div>\n    </div>\n  </div>\n</section>",
+        "color_scheme": "scheme-1"
       }
     },
-    "video": {
-      "type": "video",
+    "dropout_brand_story": {
+      "type": "custom-liquid",
       "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "custom_liquid": "<section class=\"dropout-brand-story\">\n  <div class=\"page-width\">\n    <div class=\"grid grid-cols-1 lg:grid-cols-2 gap-16 items-center\">\n      <div class=\"text-left\">\n        <h2 class=\"text-4xl lg:text-5xl font-black text-black mb-6\">\n          Varför vi startade The Dropout\n        </h2>\n        <p class=\"text-lg text-gray-800 mb-6\">\n          Vi var trötta. Trötta på produkter som lovade himmel och hav men levererade ingenting. Trötta på märken som sålde image istället för resultat.\n        </p>\n        <p class=\"text-lg text-gray-800 mb-6\">\n          Så vi sade fuck it. Vi skulle skapa något annorlunda. Något äkta. Något som faktiskt fungerar.\n        </p>\n        <p class=\"text-lg text-gray-800\">\n          The Dropout är inte bara en produkt. Det är ett statement. Ett sätt att säga nej till bullshit och ja till kvalitet.\n        </p>\n      </div>\n      <div class=\"text-center\">\n        <div class=\"text-9xl font-black text-black\">\n          THE<br>DROPOUT\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+        "color_scheme": "scheme-1"
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
+    "dropout_cta": {
+      "type": "custom-liquid",
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "custom_liquid": "<section class=\"dropout-cta\">\n  <div class=\"page-width text-center\">\n    <h2 class=\"text-5xl lg:text-6xl font-black text-white mb-6\">\n      Bli en del av rörelsen\n    </h2>\n    <p class=\"text-lg text-white opacity-80 mb-12 max-w-4xl mx-auto\">\n      The Dropout Texture Clay. Begränsad första serie. För de som vågar acceptera medelmåtta.\n    </p>\n    \n    <div class=\"flex justify-center gap-6\">\n      <a href=\"#\" class=\"bg-white text-black px-8 py-4 font-bold text-lg uppercase hover:bg-gray-100 transition-colors\">\n        PRE-ORDER NU\n      </a>\n      <a href=\"#\" class=\"border-2 border-white text-white px-8 py-4 font-bold text-lg uppercase hover:bg-white hover:text-black transition-colors\">\n        LÄS MER\n      </a>\n    </div>\n    \n    <p class=\"text-sm text-white opacity-60 mt-8\">\n      Begränsad tillgång. Bara för de som förstår skillnaden.\n    </p>\n  </div>\n</section>",
+        "color_scheme": "scheme-4"
       }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "dropout_hero",
+    "dropout_movement",
+    "dropout_features",
+    "dropout_testimonials",
+    "dropout_brand_story",
+    "dropout_cta"
   ]
 }
